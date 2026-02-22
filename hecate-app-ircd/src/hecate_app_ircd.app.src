@@ -1,0 +1,18 @@
+{application, hecate_app_ircd, [
+    {description, "Hecate IRC Chat Daemon"},
+    {vsn, "0.1.0"},
+    {registered, [hecate_app_ircd_sup]},
+    {mod, {hecate_app_ircd_app, []}},
+    {applications, [
+        kernel, stdlib, crypto, ssl, inets,
+        cowboy, hackney, reckon_db, evoq, reckon_evoq, esqlite
+    ]},
+    {env, [
+        {data_dir, "~/.hecate/hecate-app-ircd"},
+        {api_socket_name, "api.sock"},
+        {enabled, true}
+    ]},
+    {modules, []},
+    {licenses, ["Apache-2.0"]},
+    {links, [{"GitHub", "https://github.com/hecate-social/hecate-app-irc"}]}
+]}.

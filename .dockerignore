@@ -1,0 +1,11 @@
+.git
+.github
+*.md
+LICENSE
+scripts/
+
+# Build artifacts
+hecate-app-ircd/_build/
+hecate-app-ircw/node_modules/
+hecate-app-ircw/dist/
+hecate-app-ircw/.svelte-kit/
