@@ -25,7 +25,8 @@ handle_get(Req0, _State) ->
             app_ircd_api_utils:json_error(500, Reason, Req0)
     end.
 
-row_to_map([ChannelId, Name, Topic, OpenedBy, Status, StatusLabel, OpenedAt]) ->
+row_to_map(Row) when is_tuple(Row) ->
+    [ChannelId, Name, Topic, OpenedBy, Status, StatusLabel, OpenedAt] = tuple_to_list(Row),
     #{
         channel_id => ChannelId,
         name => Name,
