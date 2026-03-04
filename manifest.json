@@ -1,0 +1,23 @@
+{
+  "name": "irc",
+  "version": "0.1.0",
+  "icon": "\ud83d\udcac",
+  "description": "IRC-Style Chat over Macula Mesh",
+  "tag": "irc-studio",
+  "trust_level": "untrusted",
+  "permissions": ["read:mesh_status"],
+  "repository": "https://github.com/hecate-apps/hecate-app-irc",
+  "license": "Apache-2.0",
+  "appstore": {
+    "plugin_name": "IRC Chat",
+    "org": "hecate-apps",
+    "homepage": "https://github.com/hecate-apps/hecate-app-irc",
+    "tags": "chat,irc,social,messaging,mesh",
+    "license_type": "free",
+    "fee_cents": 0,
+    "fee_currency": "EUR",
+    "node_limit": 0,
+    "oci_image": "ghcr.io/hecate-apps/hecate-app-ircd",
+    "min_daemon_version": "0.14.0"
+  }
+}

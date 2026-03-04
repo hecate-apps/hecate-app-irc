@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: hecate-social/hecate-app-ircd
+  IMAGE_NAME: hecate-apps/hecate-app-ircd
 
 jobs:
   build-and-push:
