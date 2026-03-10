@@ -18,6 +18,8 @@
     "fee_currency": "EUR",
     "node_limit": 0,
     "oci_image": "ghcr.io/hecate-apps/hecate-app-ircd",
-    "min_daemon_version": "0.14.0"
+    "min_daemon_version": "0.14.0",
+    "group_name": "SOCIAL",
+    "group_icon": "speech_balloon"
   }
 }
